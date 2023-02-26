@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="disp" style="color: purple; font-size: 65px;"></div>
+    <script>
+        var number = Number(prompt("Enter Your NUmber"))
+        if (number == "") {
+            //    alert("Enter A Number")
+            document.getElementById("disp").innerText = "Kindly Enter A Number"
+        } else if (number % 2 == 0) {
+            //   alert("Even Number")
+            document.getElementById("disp").innerText = "Even Number"
+        }
+        else if (number % 2 == 1) {
+            // alert("Odd Number")
+            document.getElementById("disp").innerText = "Odd Number"
+       } else {
+            // alert("A Proper Number")
+            document.getElementById("disp").innerText = " Enter A Proper Number"
+        }
+
+    </script>
+</body>
+
+</html>
